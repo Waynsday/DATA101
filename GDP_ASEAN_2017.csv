@@ -1,10 +1,10 @@
-,Unnamed: 2,Unnamed: 3,gdpc
-0,IDN,Indonesia,4135.6
-1,KHM,Cambodia,1643.1
-2,LAO,Lao PDR,2534.9
-3,MMR,Myanmar,1407.8
-4,MYS,Malaysia,11414.2
-5,PHL,Philippines,3485.1
-6,SGP,Singapore,65233.3
-7,THA,Thailand,7806.7
-8,VNM,Vietnam,27153.0
+,Code,Unnamed: 3,gdpc,finlit
+0,IDN,Indonesia,4135.6,.32
+1,KHM,Cambodia,1643.1,.18
+2,LAO,Lao PDR,2534.9,.13
+3,MMR,Myanmar,1407.8,.52
+4,MYS,Malaysia,11414.2,.36
+5,PHL,Philippines,3485.1,.25
+6,SGP,Singapore,65233.3,.59
+7,THA,Thailand,7806.7,.27
+8,VNM,Vietnam,27153.0,.24
