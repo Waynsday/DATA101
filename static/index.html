@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DATA101 Final Project - Group 6</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400&family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing-api.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <link href="/static/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+  <h1> Why Does Finance Matter? </h1>
+  <h2 id="subtitle"> Financial Inclusion Assessment Tools </h2>
+</div>
+
+<hr align="left" width = 75%>
+
+<!--<div class="sidebar">
+  <a href="#rbrief" style="text-decoration: none; color: black"> <div id="rbrief"> REGION BRIEF </a> </div>
+  <a href="#finacc" style="text-decoration: none; color: black"> <div id="finacc"> FINANCIAL ACCOUNTS </a> </div>
+  <a href="#barriers" style="text-decoration: none; color: white"> <div id="barriers"> BARRIERS </a> </div>
+  <a href="#fintech" style="text-decoration: none; color: white"> <div id="fintech"> FINANCIAL TECHNOLOGY </a> </div>
+</div>-->
+
+<div class="intro">
+  <p>
+    As defined by the World Bank, financial inclusion is the accessibility, responsibility,
+    and sustainability of affordable financial products and services that meet the needs of
+    individuals and businesses (Financial Inclusion, 2018). The attention received by financial
+    inclusion is due to its potential contribution to economic and financial development that
+    could promote inclusive growth and income equality. The welfare of people can be addressed
+    by financial inclusion as people who are cash-constrained can have help in managing their
+    cash more efficiently (Morgan & Yoshino, 2017).
+  </p>
+  <p>
+    Financial inclusion is intersectional because the factors that drive or hold it back vary
+    across countries. For a long time, the Association of Southeast Asian Nations (ASEAN) has
+    been planning its route to become "one of the world's top five digital economies" (USAID,
+    2020), with a rapidly expanding digital market that includes more than 416 million internet
+    users and 853 million mobile phone subscriptions. Part of the <i>Master Plan on ASEAN
+    Connectivity 2025</i> is to push for plans to increase digital integration of business and
+    finance secotrs to increase inter-country transactional efficiency, and this study aims to
+    provide evidence for opportunities that can be taken advantage of to give all countries in
+    the region, whether high-, middle-, or low-income, an equitable chance to better ride the
+    globalization wave.
+  </p>
+  <p>
+    The visualization tools in this application are designed to allow the exploration, comparison,
+    and visualization of selected 2017 ASEAN data from the World Bank's Global Findex involving 4
+    outlined areas: the Region Brief, Financial Accounts, Barriers, and Financial Technology.
+  </p>
+
+</div>
+
+<div class="container">
+  <div class="bodytext">
+    <h2 id="rbrief"> REGION BRIEF </h2>
+    <p id="mainq"> What does financial inclusion look like in the Philippines? </p>
+
+    <div id="countryname">
+      <p id="country">GDP Rates of ASEAN Countries in 2017</p>
+    </div>
+    <div id="gdpchart" style="width: 100%">
+    </div>
+    <div id="countryname">
+      <p id="country">Philippines</p>
+    </div>
+    <div id="finlit"></div>
+  </div>
+
+  <!--<div class="bodytext">
+    <h2 id="finacc"> FINANCIAL ACCOUNTS </h2>
+    <p id="mainq"> How many people in the Philippines own financial accounts? </p>
+  </div>-->
+
+  <div class="bodytext">
+    <h2 id="barriers"> BARRIERS </h2>
+    <p id="mainq"> Which barriers limit Filipinos from accessing bank accounts? </p>
+
+    <!-- CHART 4: BARRIERS -->
+    <div id="countryname">
+      <p id="country">Philippines</p>
+    </div>
+    <div style="width: 100%; display: table;">
+      <div style="display: table-row">
+        <div id="barrier1" style="width: 500; display: table-cell;"> </div>
+        <div id="barrier2" style="width: 500; display: table-cell;"></div>
+        <div id="barrier3" style="width: 500; display: table-cell;"></div>
+        <div id="barrier4" style="width: 500; display: table-cell;"></div>
+      </div>
+      <div style="display: table-row">
+        <div id="barrier5" style="width: 500; display: table-cell;"> </div>
+        <div id="barrier6" style="width: 500; display: table-cell;"></div>
+        <div id="barrier7" style="width: 500; display: table-cell;"></div>
+        <div id="barrier8" style="width: 500; display: table-cell;"></div>
+      </div>
+
+    </div>
+
+    <div class="bodytext">
+      <h2 id="fintech"> FINANCIAL TECHNOLOGY </h2>
+      <p id="mainq"> How is the Philippines faring in its use of financial technologies (fintech)? </p>
+
+
+      <!-- CHART 5: ASEAN MAP (HOVER) -->
+      <div id="my_dataviz"></div>
+
+    </div>
+  </div>
+  <script src="/static/js/index.js"></script>
+</body>
+</html>
